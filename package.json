@@ -4,7 +4,6 @@
   "main": "src/index.js",
   "author": "José Fresco <jose@keyrock.eu>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "lint": "eslint src"
   },
