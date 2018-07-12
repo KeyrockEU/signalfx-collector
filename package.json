@@ -1,0 +1,8 @@
+{
+  "name": "signalfx-collector",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "José Fresco <jose@keyrock.eu>",
+  "license": "MIT",
+  "private": true
+}
