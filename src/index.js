@@ -7,7 +7,7 @@ function hashMetric (m) {
   return `${m.metric}: ${JSON.stringify(m.dimensions)}`
 }
 
-function SignalFxCollector ({ basicDimensions, resolution = 60000, client }) {
+module.exports.SignalFxCollector = function SignalFxCollector ({ basicDimensions, resolution = 60000, client }) {
   let gauges = []
   let counters = []
 
@@ -58,5 +58,3 @@ function SignalFxCollector ({ basicDimensions, resolution = 60000, client }) {
     }
   }
 }
-
-module.exports = SignalFxCollector
