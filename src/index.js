@@ -24,6 +24,11 @@ module.exports.SignalFxCollector = function SignalFxCollector ({ basicDimensions
   }
 
   function flush () {
+    // Don't do anything if there's no data to process
+    if (!gauges.length && !counters.length) {
+      return
+    }
+
     const gaugesByMetric = groupBy(gauges, hashMetric)
     gauges = []
 
